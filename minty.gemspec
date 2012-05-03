@@ -11,6 +11,8 @@ Gem::Specification.new do |gem|
   gem.summary       = %q{A quick and dirty gem which mints DataCite DOIs}
   gem.homepage      = "http://github.com/jezcope/minty"
 
+  gem.add_dependency('rest-client')
+
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
